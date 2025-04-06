@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+textarea {
+    min-height: 100px; /* Aproximadamente 5 linhas */
+    max-height: 300px;
+    overflow-y: auto;
+    resize: none;
+}
+
+input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.mensagem-erro {
+    color: red;
+    font-size: 0.9em;
+    text-align: left;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.tabela {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cabecalho,
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.item {
+    font-weight: normal;
+}
+
+.coluna {
+    flex: 1;
+    padding: 0 10px;
+    word-wrap: break-word;
+}
+
+.coluna.nome {
+    flex: 2;
+}
+
+.coluna.descricao {
+    flex: 3;
+}
+
+.coluna.acao {
+    flex: 1;
+    text-align: right;
+}
+
+.botao-remover {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao-remover:hover {
+    background-color: #cc0000;
+}
+
+@media (max-width: 600px) {
+    .cabecalho, .item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .coluna {
+        padding: 5px 0;
+        width: 100%;
+    }
+
+    .coluna.acao {
+        text-align: left;
+    }
+}
