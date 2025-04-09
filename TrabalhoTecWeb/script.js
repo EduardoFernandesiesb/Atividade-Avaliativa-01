@@ -47,8 +47,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         itens.forEach((item, index) => {
             const li = document.createElement("li");
-            li.textContent = `${item.nome}: ${item.descricao}`;
-            
+
+            const divTexto = document.createElement("div");
+            divTexto.classList.add("item-texto");
+
+            const nomeEl = document.createElement("strong");
+            nomeEl.textContent = item.nome;
+
+            const descricaoEl = document.createElement("span");
+            descricaoEl.textContent = item.descricao;
+
+            divTexto.appendChild(nomeEl);
+            divTexto.appendChild(descricaoEl);
+
             const deleteBtn = document.createElement("button");
             deleteBtn.textContent = "Remover";
             deleteBtn.classList.add("delete-btn");
@@ -57,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 atualizarListagem();
             });
 
+            li.appendChild(divTexto);
             li.appendChild(deleteBtn);
             listaItens.appendChild(li);
         });
