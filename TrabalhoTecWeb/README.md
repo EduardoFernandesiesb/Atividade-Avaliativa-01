@@ -1,4 +1,5 @@
-# 📌 Aplicação Web - Cadastro de Itens
+# 📌 Trabalho de Tecnologia Web - Cadastro de Itens
+EDUARDO FERNANDES DOS SANTOS - 2312130156
 
 Este é um projeto simples de uma aplicação web que permite cadastrar itens e visualizá-los em uma lista.
 
@@ -6,5 +7,3 @@ Este é um projeto simples de uma aplicação web que permite cadastrar itens e 
 - HTML5
 - CSS3
 - JavaScript (ES6)
-
-
