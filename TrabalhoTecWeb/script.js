@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        itens.push({ nome, descricao });
+        itens.unshift({ nome, descricao });
         nomeInput.value = "";
         descricaoInput.value = "";
         atualizarListagem();
